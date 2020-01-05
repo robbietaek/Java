@@ -1,0 +1,10 @@
+package kkt20191008;
+
+class KKTEmp {
+	
+	private String name; // 이름
+	private String work; // 업무
+	private String position; // 직급
+	private int age; // 나이
+
+}

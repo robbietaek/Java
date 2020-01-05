@@ -1,0 +1,10 @@
+package chap19;
+
+import java.io.*;
+
+public class FileToStreamEx1 {
+	public static void main(String[] args) throws FileNotFoundException {
+		BufferedReader br  = new BufferedReader(new FileReader(new File("src/chap19/FilterStreamEx1.java")));
+		br.lines().forEach(s->System.out.println(s));
+	}
+}

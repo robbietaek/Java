@@ -1,0 +1,10 @@
+package chap19;
+
+import java.util.*;
+import java.io.*;
+public class SortedEx2 {
+	public static void main(String[] args) {
+		List<Student> list = Arrays.asList(new Student("È«±æµ¿",90,80,"°æ¿µ"),new Student("±è»ñ°«",95,85,"ÄÄ°ø"), new Student("ÀÌ¸ù·æ",80,90,"È­°ø"), new Student("ÀÓ²©Á¤",70,60,"ÄÄ°ø"));
+		list.stream().sorted().forEach(System.out::println);
+	}
+}

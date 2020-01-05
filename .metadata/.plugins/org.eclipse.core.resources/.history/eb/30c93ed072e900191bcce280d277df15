@@ -1,0 +1,40 @@
+package chap19;
+
+import java.io.*;
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class ProductFileStreamEx2 {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader("product.txt"));
+		// 월별 판매 수량을 Map 객체로 생성하기
+		List<Car> list = br.lines().map(s -> {
+			String[] str = s.split(",");
+			String temp = "";
+			try {
+				temp = str[4];
+			} catch (ArrayIndexOutOfBoundsException e) {
+				temp = "";
+			}
+			return new Car(Integer.parseInt(str[0]), Integer.parseInt(str[1]), str[2], Integer.parseInt(str[3]), temp);
+		}).filter(s -> s.getCon() == 2)
+				.collect(Collectors.groupingBy(Car::getMonth, Collectors.summingLong(Car::getQty)));
+		System.out.println(map);
+
+		BufferedReader br2 = new BufferedReader(new FileReader("product.txt"));
+		// 반품개수 구하기
+		Map<Integer, Long> map2 = br2.lines().map(s -> {
+			String[] str = s.split(",");
+			String temp = "";
+			try {
+				temp = str[4];
+			} catch (ArrayIndexOutOfBoundsException e) {
+				temp = "";
+			}
+			return new Car(Integer.parseInt(str[0]), Integer.parseInt(str[1]), str[2], Integer.parseInt(str[3]), temp);
+		}).filter(s -> s.getCon() == 3)
+				.collect(Collectors.groupingBy(Car::getMonth, Collectors.summingLong(Car::getQty)));
+
+		System.out.println(map2);
+	}
+}

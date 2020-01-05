@@ -1,0 +1,16 @@
+package chap19;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+public class SortedEx1 {
+	public static void main(String[] args) {
+		List<String> list = Arrays.asList("È«±æµ¿","±ê»ñ°«","ÀÌ¸ù·æ","ÀÓ²©Á¤");
+		list.stream().forEach(s->System.out.println(s));
+		System.out.println("±âº»Á¤·Ä");
+		list.stream().sorted().forEach(s->System.out.println(s));
+		System.out.println("±âº» ¿ª¼ø Á¤·Ä");
+		list.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+	}
+}

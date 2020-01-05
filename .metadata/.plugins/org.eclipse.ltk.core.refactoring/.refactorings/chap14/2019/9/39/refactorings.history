@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;chap14.Properties&apos; to &apos;PropertiesEx1&apos;&#x0D;&#x0A;- Original project: &apos;chap14&apos;&#x0D;&#x0A;- Original element: &apos;chap14.Properties&apos;&#x0D;&#x0A;- Renamed element: &apos;chap14.PropertiesEx1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Properties&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;chap14{Properties.java[Properties" matchStrategy="1" name="PropertiesEx1" qualified="false" references="true" similarDeclarations="false" stamp="1569373888511" textual="false" version="1.0"/>
+</session>

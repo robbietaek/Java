@@ -1,0 +1,40 @@
+package kkt20191008;
+
+class KKTEmp {
+	
+	private String name; // 이름
+	private String work; // 업무
+	private String position; // 직급
+	private int age; // 나이
+	
+	public KKTEmp(String name, String work, String position, int age) {
+		this.name = name;
+		this.work = work;
+		this.position = position;
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getWork() {
+		return work;
+	}
+
+	public String getPosition() {
+		return position;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	@Override
+	public String toString() {
+		return "KKTEmp [name=" + name + ", work=" + work + ", position=" + position + ", age=" + age + "]";
+	}
+	
+	
+
+}

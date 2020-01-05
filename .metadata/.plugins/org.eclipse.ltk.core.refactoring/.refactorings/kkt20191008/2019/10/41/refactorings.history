@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;kkt20191008.Emp&apos; to &apos;KKTEmp&apos;&#x0D;&#x0A;- Original project: &apos;kkt20191008&apos;&#x0D;&#x0A;- Original element: &apos;kkt20191008.Emp&apos;&#x0D;&#x0A;- Renamed element: &apos;kkt20191008.KKTEmp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Emp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;kkt20191008{Emp.java[Emp" matchStrategy="1" name="KKTEmp" qualified="false" references="true" similarDeclarations="false" stamp="1570514593990" textual="false" version="1.0"/>
+</session>

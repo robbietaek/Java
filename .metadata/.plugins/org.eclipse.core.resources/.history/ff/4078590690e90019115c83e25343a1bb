@@ -1,0 +1,19 @@
+package finalt;
+
+/*
+ *  float 자료형인 num 변수를 선언하고 10.5 값을 저장하는 구문을 작성하시오. 
+ */
+
+public class newfile {
+
+	public static void main(String[] args) {
+
+		float num;
+		num = 10.5f;
+		
+		System.out.println(num);
+		
+
+	}
+
+}

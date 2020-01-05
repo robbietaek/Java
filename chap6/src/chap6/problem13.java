@@ -1,0 +1,12 @@
+package chap6;
+
+public class problem13 {
+
+	public static void main(String[] args) {
+
+		
+		
+
+	}
+
+}

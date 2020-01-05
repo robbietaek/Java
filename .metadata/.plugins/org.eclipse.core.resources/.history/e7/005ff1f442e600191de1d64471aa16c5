@@ -1,0 +1,50 @@
+package chap19;
+
+import java.util.*;
+import java.io.*;
+
+
+class Student2 {
+	private String name;
+	private int eng;
+	private int math;
+	private String major;
+
+	public Student2(String name, int eng, int math, String major) {
+		super();
+		this.name = name;
+		this.eng = eng;
+		this.math = math;
+		this.major = major;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getEng() {
+		return eng;
+	}
+
+	public int getMath() {
+		return math;
+	}
+
+	public String getMajor() {
+		return major;
+	}
+
+	@Override
+	public String toString() {
+		return "[name=" + name + ", eng=" + eng + ", math=" + math + ", major=" + major + "]";
+	}
+
+}
+
+public class SortedEx2 {
+	public static void main(String[] args) {
+		List<Student2> list = Arrays.asList(new Student2("È«±æµ¿", 90, 80, "°æ¿µ"), new Student2("±è»ñ°«", 95, 85, "ÄÄ°ø"),
+				new Student2("ÀÌ¸ù·æ", 80, 90, "È­°ø"), new Student2("ÀÓ²©Á¤", 70, 60, "ÄÄ°ø"));
+		list.stream().sorted().forEach(System.out::println);
+	}
+}

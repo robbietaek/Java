@@ -1,0 +1,19 @@
+package finalt;
+
+class Animal {
+	String name;
+	int age;
+	
+	public Animal(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+}
+
+public class newfile {
+	public static void main(String[] args) {
+		Animal a = new Animal("¿ø¼þÀÌ", 20);
+		System.out.println(a);
+	}
+}

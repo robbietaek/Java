@@ -1,0 +1,9 @@
+package chap19;
+
+import java.util.*;
+import java.io.*;
+public class SortedEx2 {
+	public static void main(String[] args) {
+		List<Student> list = Arrays.asList(new Student)
+	}
+}

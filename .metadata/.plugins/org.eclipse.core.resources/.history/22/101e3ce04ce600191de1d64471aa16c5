@@ -1,0 +1,36 @@
+package chap19;
+
+/*
+ * 대용량 데이터를 product.txt 파일로 생성하기
+ */
+import java.io.*;
+
+public class ProductGenerator {
+	public static void main(String[] args) {
+		PrintStream ps = null;
+		FileOutputStream fos = null;
+		String[] cars = {"아반테", "그랜저", "BMW", "Benz", "라세티"};
+		String[] remark = {"몰라요", "싫어요", "그냥이요"};
+		int limit  = 0;
+		int con = 0;
+		try {
+			fos = new FileOutputStream("Product.txt");
+			ps = new PrintStream(fos);
+			while(limit ++<1000000) {
+				ps.print((int)(Math.random()*12)+1+",");
+				ps.print((int)(Math.random()*3)+1+",");
+				ps.print(cars[(int)(Math.random()*5)]);
+				ps.print((int)(Math.random()*5));
+				if(con==3) {
+					ps.print(" ");
+					ps.print(remark[(int)(Math.random()*3)]);
+				}
+				ps.println();
+			}
+			System.out.println("파일생성완료");
+			ps.flush(); ps.close(); fos.close();
+		} catch(IOException e) {
+			e.getStackTrace();
+		}
+	}
+}
